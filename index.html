@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Welcome to LamaGlama, the #1 purveyor of llamas in the Midwest.">
+        <meta name="keywords" content="lamaglama,llama,sales,midwest">
+        <meta name="author" content="Cristobal Grana">
+        <title>LamaGlama</title>
+        <link rel="stylesheet" type="text/css" href="indexstyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <script src="jquery-scrollto/vendor/jquery.js"></script>
+        <script src="jquery-scrollto/lib/jquery-scrollto.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="classie.js"></script>
+        <!--[if IE]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <a id="logo" onclick="$('#launch').ScrollTo({duration: 1000, durationMode: 'all'});">LamaGlama</a>
+            <a class="navItem" id="itemRight">WHO MADE THIS?</a>
+            <a class="navItem">CONTACT</a>
+            <a onclick="$('#stories').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">FACTS</a>
+            <a onclick="$('#about').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">ABOUT</a>
+        </header>
+        <div id="launch">
+            <p>Welcome to LamaGlama</p>
+            <a onclick="$('#about').ScrollTo({duration: 1000, durationMode: 'all'});">Let&#8217;s Begin<br><img src="images/downarrow.png"></a>
+        </div>
+        <div id="about">
+            <p class="title">What exactly is LamaGlama?</p>
+            <div class="columnContainer">
+                <span class="columns">
+                    <img src="images/Hearticon.png" alt="Llama love"><br>
+                    <p><em>Lama Glama</em> is the scientific name for the common Llama, one of the most wonderful herd animals in the world. Whether it be for farming, breeding, guarding, packing, or just to have as pets, llamas make for amazing companions.</p>
+                </span>
+                <span id="center" class="columns">
+                    <img src="images/Statsicon.png" alt="Llama stats"><br>
+                    <p>A full-sized adult llama can be up to 180 cm tall (5'9"), and can weigh between 130 and 200 kg (290-440 lb). LLamas typically live between for 15 to 25 years, with some living up to 30 years or more.</p>
+                </span>
+                <span class="columns">
+                    <img src="images/Flowicon.png" alt="Llama flow"><br>
+                    <p>Llamas are very social creatures and live with other llamas as a herd, taking care of each other like a family. They have been shown to be quite friendly and pleasant to be around, making them very approachable animals.</p>
+                </span>
+            </div>
+            <a onclick="$('#stories').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
+        </div>
+        <div id="stories">
+            <p class="title">LLamas. Are. Awesome</p>
+            <div class="collectionContainer">
+                <span id="angel" class="containerItem" onclick="open1()">
+                    <img src="images/angelheartranch.png" alt="Angel Heart Ranch">
+                    <p>Angel Heart Ranch</p>
+                </span>
+                <span id="middleTop" class="containerItem">
+                    <img src="images/katrinacapasso.png" alt="Katrina Capasso">
+                    <p>Katrina Capasso</p>
+                </span>
+                <span id="kenai" class="containerItem">
+                    <img src="images/kenaimountains.png" alt="Kenai Mountains, AK">
+                    <p>Kenai Mountains, AK</p>
+                </span>
+            </div>
+            <div class="collectionContainer" id="containerBottom">
+                <span class="containerItem">
+                    <img src="images/geefarm.png" alt="GEE Funny Farm">
+                    <p>GEE Funny Farm</p>
+                </span>
+                <span id="middleBottom" class="containerItem">
+                    <img src="images/bellingham.png" alt="Bellingham Health Center">
+                    <p>Bellingham Health</p>
+                </span>
+                <span class="containerItem">
+                    <img src="images/tomrayner.png" alt="Tom Rayner">
+                    <p>Tom Rayner</p>
+                </span>
+                
+                <!--Modal Popups-->
+                <div class="modalDialog" id="modal1">
+                    <a class="close" onclick="close1()">Close</a>
+                    <p>In case of a robot uprising (skynet, siri, HAL 9000, etc.), llamas can be particularly useful.</p>
+                    <ol>
+                        <li>They're good companions, so you'll never be alone.</li>
+                    </ol>
+                </div>
+            </div>
+            <a onclick="$('#llamas').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
+        </div>
+        <script>
+            function open1() {
+                document.getElementById("modal1").style.opacity = "1";
+            }
+            
+            function close1() {
+                document.getElementById("modal1").style.opacity = "0";
+            }
+            
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                        shrinkOn = 30,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+    </body>
+</html>
