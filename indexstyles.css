@@ -273,7 +273,7 @@ header.smaller a.navItem {
     font-family: "Roboto Slab", serif;
     font-size: 26px;
     width: 750px;
-    margin: 40vh auto;
+    margin: 0 auto;
 }
 
 .mainImage{
