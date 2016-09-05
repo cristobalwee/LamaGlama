@@ -209,6 +209,19 @@ Remember: Alpacas != Llamas</h2>
                 document.getElementById("modal6").style.zIndex = "-1";
             }
             
+            function validateForm() {
+                var x = document.forms["contactform"]["name"].value;
+                var y = document.forms["contactform"]["email"].value;
+                if (x == null || x == "") {
+                    alert("Don't forget to fill in your name.");
+                    return false;
+                }
+                if (y == null || y == "") {
+                    alert("Don't forget to fill in your email.");
+                    return false;
+                }
+            }
+            
             function init() {
                 window.addEventListener('scroll', function(e){
                     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
