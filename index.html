@@ -17,9 +17,9 @@
     <body>
         <header>
             <a id="logo" onclick="$('#launch').ScrollTo({duration: 500, durationMode: 'all'});">LamaGlama</a>
-            <a class="navItem" id="itemRight">WHO MADE THIS?</a>
-            <a class="navItem">CONTACT</a>
-            <a onclick="$('#stories').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">FACTS</a>
+            <a onclick="$('#whomadethis').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem" id="itemRight">WHO MADE THIS?</a>
+            <a onclick="$('#contact').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">CONTACT</a>
+            <a onclick="$('#facts').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">FACTS</a>
             <a onclick="$('#about').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">ABOUT</a>
         </header>
         <div id="launch">
@@ -42,61 +42,171 @@
                     <p>Llamas are very social creatures and live with other llamas as a herd, taking care of each other like a family. They have been shown to be quite friendly and pleasant to be around, making them very approachable animals.</p>
                 </span>
             </div>
-            <a onclick="$('#stories').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
+            <a onclick="$('#facts').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
         </div>
-        <div id="stories">
+        <div id="facts">
             <p class="title">LLamas. Are. Awesome</p>
             <div class="collectionContainer">
-                <span id="angel" class="containerItem" onclick="open1()">
-                    <img src="images/angelheartranch.png" alt="Angel Heart Ranch">
-                    <p>Angel Heart Ranch</p>
+                <span id="spit" class="containerItem" onclick="open1()">
+                    <img src="images/llamaspit.png" alt="Llama Spit">
+                    <p>Llama Spit</p>
                 </span>
-                <span id="middleTop" class="containerItem">
-                    <img src="images/katrinacapasso.png" alt="Katrina Capasso">
-                    <p>Katrina Capasso</p>
+                <span id="middleTop" class="containerItem" onclick="open2()">
+                    <img src="images/llamaguards.png" alt="Llama Guards">
+                    <p>Llama Guards</p>
                 </span>
-                <span id="kenai" class="containerItem">
-                    <img src="images/kenaimountains.png" alt="Kenai Mountains, AK">
-                    <p>Kenai Mountains, AK</p>
+                <span id="poop" class="containerItem" onclick="open3()">
+                    <img src="images/llamapoop.png" alt="Llama Poop">
+                    <p>Llama Poop</p>
                 </span>
             </div>
             <div class="collectionContainer" id="containerBottom">
-                <span class="containerItem">
-                    <img src="images/geefarm.png" alt="GEE Funny Farm">
-                    <p>GEE Funny Farm</p>
+                <span class="containerItem" onclick="open4()">
+                    <img src="images/llamatravel.png" alt="Llama Travel">
+                    <p>Llama Travel</p>
                 </span>
-                <span id="middleBottom" class="containerItem">
-                    <img src="images/bellingham.png" alt="Bellingham Health Center">
-                    <p>Bellingham Health</p>
+                <span id="middleBottom" class="containerItem" onclick="open5()">
+                    <img src="images/llamafur.png" alt="Llama Fur">
+                    <p>Llama Fur</p>
                 </span>
-                <span class="containerItem">
-                    <img src="images/tomrayner.png" alt="Tom Rayner">
-                    <p>Tom Rayner</p>
+                <span class="containerItem" onclick="open6()">
+                    <img src="images/llamacool.png" alt="Llama Awesomeness">
+                    <p>Llama Awesomeness</p>
                 </span>
                 
                 <!--Modal Popups-->
                 <div class="modalDialog" id="modal1">
                     <a class="close" href="javascript:void(0)" onclick="close1()">Close</a>
-                    <p>In case of a robot uprising (skynet, siri, HAL 9000, etc.) or other such apocalyptic phenomena, llamas can be particularly useful.</p>
-                    <p>1. Llamas are social animals, so you'll never be alone.</p>
-                    <p>2. Llamas spit when threatened, so you can fight back.</p>
-                    <p>3. Llamas have a top speed of 35mph, so you can get anywhere at lightning fast speeds.</p>
-                    <p>4. Llamas are soft and furry, so you can always have something to pet.</p>
+                    <img src="images/llamaspit.png" alt="Llama Spitting">
+                    <p>Despite being very social herd animals, llamas do sometimes spit at each other (and at humans, too) as a way of either expressing irritation or disciplining lower ranking llamas in a herd.</p>
+                </div>
+                <div class="modalDialog" id="modal2">
+                    <a class="close" href="javascript:void(0)" onclick="close2()">Close</a>
+                    <img src="images/llamaguards.png" alt="Llama Guards">
+                    <p>Ever since the early 1980s, llamas have been used as livestock guards in North America, especially in regions where larger predators are prevalent. Research shows that using llamas as guards effectively reduce losses to predators.</p>
+                </div>
+                <div class="modalDialog" id="modal3">
+                    <a class="close" href="javascript:void(0)" onclick="close3()">Close</a>
+                    <img src="images/llamapoop.png" alt="Llama Poop">
+                    <p>Llama poop is sellable, and actually makes for excellent natural fertilizer. From the top-selling Llama poop company in LA, <em>LLama brew</em>, "Llama manure requires no composting and is a "no-burn" solution to your gardening needs".</p>
+                </div>
+                <div class="modalDialog" id="modal4">
+                    <a class="close" href="javascript:void(0)" onclick="close4()">Close</a>
+                    <img src="images/llamatravel.png" alt="Llama Travel">
+                    <p>Being herd animals, llamas can carry up to 50 pounds for 20 miles a day, and run up  to speeds of 35mph. But don't overdo it - llamas will refuse to move, even spit and hiss if you put too much weight on them.</p>
+                </div>
+                <div class="modalDialog" id="modal5">
+                    <a class="close" href="javascript:void(0)" onclick="close5()">Close</a>
+                    <img src="images/llamafur.png" alt="Llama Fur">
+                    <p>Although not quite as soft as Alpaca wool, llama wool is quite pleasant to the touch, and is often used to craft ropes, rugs, and other tougher fabrics.</p>
+                </div>
+                <div class="modalDialog" id="modal6">
+                    <a class="close" href="javascript:void(0)" onclick="close6()">Close</a>
+                    <p>From what we've learned, it's clear that llamas can be particularly useful in case of a robot uprising (skynet, siri, HAL 9000, etc.) or other such apocalyptic phenomena (zombies?):</p>
+                    <ol>
+                        <li>Llamas are social animals, so you'll never be alone.</li>
+                        <li>Llamas spit when threatened, so you can fight back.</li>
+                        <li>Llamas make for excellent guards, so you'll always be protected.</li>
+                        <li>Llamas have a top speed of 35mph, so you can get anywhere at lightning fast speeds.</li>
+                        <li>Llamas are soft and furry, so you can always have something to pet.</li>
+                    </ol>
                 </div>
             </div>
-            <a onclick="$('#llamas').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
+            <a onclick="$('#contact').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
+        </div>
+        <div id="contact">
+            <p class="topTitle">Let's Talk Llamas</p>
+            <form name="contactform" action="handler.php" method="post" onsubmit="return validateForm()">
+                <p class="formp">Name</p>
+                <input type="text" name="name">
+                <br>
+                <p class="formp">Email Address</p>
+                <input type="email" name="email">
+                <p class="formp">Message</p>
+                <input type="text" name="comments">
+                <input type="submit" name="submit" value="Submit">
+            </form>
+            <a onclick="$('#whomadethis').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
+        </div>
+        <div id="whomadethis">
+            <p class="topTitle">Hello There</p>
+            <div>
+                <img id="profile" src="images/profile.png">
+                <p class="bottomTitle">I&#8217;m Cristobal Gra&ntilde;a, a Math and Computer Science student at the University of Illinois at Urbana-Champaign. I'm currently a junior, and I've mostly taken classes in software development and systems (C, C++, MIPS, Java, etc.), but I've lately found that I love working with the frontend and UX of websites and apps. I mostly just used HTML5/CSS3 with a dash of jQuery to make this site since I haven't had much experience with JS libraries/frameworks (although I would've loved to have learned Angular and use it here; but hey, maybe for another time)</p>
+            </div>
+            <a onclick="$('#beforeyougo').ScrollTo({duration: 1000, durationMode: 'all'});"><p>Before you go</p><img id="downarrow" src="images/downarrow.png"></a>
+        </div>
+        <div id="beforeyougo">
+            <iframe src="//giphy.com/embed/26BRQkC06BuJAwiti" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p id="source"><a href="http://giphy.com/gifs/llama-pajamas-lazyanimal-26BRQkC06BuJAwiti">via GIPHY</a></p>
+            <h1>Before you go, check <a href="http://modernfarmer.com/2015/09/difference-between-llama-and-alpaca/">this</a> out</h1>
+            <h2>(it’s an article outlining the differences between alpacas and llamas)
+Remember: Alpacas != Llamas</h2>
+            <footer>
+                <a href="https://www.facebook.com/cristobal.granasamanez" target="_blank"><button id="fb"></button></a>
+                <a href="https://github.com/cristobalwee" target="_blank"><button id="github"></button></a>
+                <a href="https://www.behance.net/cristobalw918d" target="_blank"><button id="behance"></button></a>
+                <a onclick="$('#launch').ScrollTo({duration: 500, durationMode: 'all'});"><img id="home" src="images/homeicon.png"></a>
+            </footer>
         </div>
         <script>
             function open1() {
                 document.getElementById("modal1").style.zIndex = "3";
-                document.getElementById("modal1").style.display = "block";
                 document.getElementById("modal1").style.opacity = "1";
             }
             
             function close1() {
                 document.getElementById("modal1").style.opacity = "0";
-                document.getElementById("modal1").style.display = "none";
                 document.getElementById("modal1").style.zIndex = "-1";
+            }
+            
+            function open2() {
+                document.getElementById("modal2").style.zIndex = "3";
+                document.getElementById("modal2").style.opacity = "1";
+            }
+            
+            function close2() {
+                document.getElementById("modal2").style.opacity = "0";
+                document.getElementById("modal2").style.zIndex = "-1";
+            }
+            
+            function open3() {
+                document.getElementById("modal3").style.zIndex = "3";
+                document.getElementById("modal3").style.opacity = "1";
+            }
+            
+            function close3() {
+                document.getElementById("modal3").style.opacity = "0";
+                document.getElementById("modal3").style.zIndex = "-1";
+            }
+            
+            function open4() {
+                document.getElementById("modal4").style.zIndex = "3";
+                document.getElementById("modal4").style.opacity = "1";
+            }
+            
+            function close4() {
+                document.getElementById("modal4").style.opacity = "0";
+                document.getElementById("modal4").style.zIndex = "-1";
+            }
+            
+            function open5() {
+                document.getElementById("modal5").style.zIndex = "3";
+                document.getElementById("modal5").style.opacity = "1";
+            }
+            
+            function close5() {
+                document.getElementById("modal5").style.opacity = "0";
+                document.getElementById("modal5").style.zIndex = "-1";
+            }
+            
+            function open6() {
+                document.getElementById("modal6").style.zIndex = "3";
+                document.getElementById("modal6").style.opacity = "1";
+            }
+            
+            function close6() {
+                document.getElementById("modal6").style.opacity = "0";
+                document.getElementById("modal6").style.zIndex = "-1";
             }
             
             function init() {
