@@ -163,7 +163,7 @@ header.smaller a.navItem {
     margin: 0 60px;
 }
 
-#stories {
+#facts {
     height: 100vh;
     background: #34d1af;
     background: -webkit-linear-gradient(#34d1af, #6258c0); /* For Safari 5.1 to 6.0 */
@@ -174,7 +174,7 @@ header.smaller a.navItem {
     text-align: center;
 }
 
-#stories a {
+#facts a {
     text-decoration: none;
     text-align: center;
     color: white;
@@ -186,11 +186,11 @@ header.smaller a.navItem {
     width: 100vw;
 }
 
-#stories a img {
+#facts a img {
     height: 14px;
 }
 
-#stories .title {
+#facts .title {
     top: 15vh;
 }
 
@@ -276,20 +276,281 @@ header.smaller a.navItem {
     margin: 0 auto;
 }
 
-.mainImage{
+#modal6 p {
+    margin-top: 15vh;
+}
+
+.modalDialog img {
     height: 250px;
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-right: -5vh;
     margin-bottom: 20px;
 }
 
-.close {
-    float: right;
+.modalDialog ol {
+    text-align: left;
+    width: 50vw;
+    margin: 30px auto;
+    font-size: 24px;
 }
 
-.close img {
-    height: 24px;
-    margin-top: 15vh;
-    margin-right: 5vh;
+.close {
+    margin: 0;
+    padding: 0;
+}
+
+#contact {
+    height: 100vh;
+    background-image: url(images/contactbackground.png);
+    background-position: 0 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.topTitle {
+    text-align: center;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 40px;
+    position: relative;
+    top: 15vh;
+    margin: 0 75px;
+}
+
+form {
+    padding: 15px; 25px;
+    width: 50vw;
+    position: ab;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+}
+
+#contact .formp {
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-family: "Roboto Slab", serif;
+}
+
+input {
+    height: 35px;
+    border: none;
+    width: 100%;
+    margin: 10px auto;
+    background-color: tr
+}
+
+input[type="text"], input[type="email"] {
+    padding-left: 10px;
+    color: #444;
+    font-family: "Roboto Slab", serif;
+    font-size: 12px;
+    border-bottom: dashed 2px white;
+    border-radius: 4px;
+}
+
+input[name="comments"] {
+    border: none;
+    padding-bottom: 4em;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 135px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    background-color: #ff6666;
+    color: white;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    border: solid 3px white;
     cursor: pointer;
+}
+
+#contact a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100vw;
+}
+
+#contact a img {
+    height: 14px;
+}
+
+#whomadethis {
+    height: 100vh;
+    background: #0276b9;
+    background: -webkit-linear-gradient(#0276b9, #ac6b81); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0276b9, #ac6b81); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0276b9, #ac6b81); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0276b9, #ac6b81); /* Standard syntax */
+    position: relative;
+    text-align: center;
+}
+
+#whomadethis #profile {
+    float:left;
+    height: 300px;
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+}
+
+#whomadethis .bottomTitle {
+    text-align: justify;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    margin: 0 auto;
+    width: 60vw;
+    right: -15vw;
+    position: relative;
+    bottom: -20vh;
+}
+
+#whomadethis a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100vw;
+}
+
+#whomadethis a #downarrow {
+    height: 14px;
+}
+
+#beforeyougo {
+    height: 100vh;
+    background: white;
+    position: relative;
+    text-align: center;
+}
+
+#beforeyougo iframe {
+    margin-top: 10vh;
+}
+
+#beforeyougo #source {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 12px;
+}
+
+#beforeyougo h1 {
+    color: black;
+    font-family: "Roboto Slab", serif;
+    font-size: 36px;
+}
+
+#beforeyougo h2 {
+    color: black;
+    font-family: "Roboto Slab", serif;
+    font-size: 22px;
+    padding: 0 250px;
+}
+
+footer {
+    background-color: #ff6666;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+}
+
+footer img {
+    margin-right: 15px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+footer button {
+    margin-top: 10px;
+    margin-right: 15px;
+    height: 35px;
+    width: 35px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ff6666;
+    float: left;
+}
+
+footer button:visited {
+    text-decoration: none;
+}
+
+footer button:hover {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+footer button:active {
+    text-decoration: none;
+}
+
+footer img:hover {
+    cursor: pointer;
+}
+
+#fb {
+    margin-left: 25px;
+    background-image: url(images/Fblogo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#fb:hover {
+    background-image: url(images/fbcolor.png);
+}
+
+#github {
+    background-image: url(images/Githublogo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#github:hover {
+    background-image: url(images/githubcolor.png);
+}
+
+#behance {
+    background-image: url(images/Behancelogo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#behance:hover {
+    background-image: url(images/Behancecolor.png);
+}
+
+#home {
+    float: right;
+    height: 30px;
+    margin-right: 25px;
 }
