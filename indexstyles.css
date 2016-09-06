@@ -558,3 +558,27 @@ footer img:hover {
     height: 30px;
     margin-right: 25px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    #launch {
+        background-position: -150px 50px;
+    }
+    
+    #launch p {
+        font-size: 36px;
+        top: 45vh;
+    }
+    
+    #logo {
+        font-size: 24px;
+    }
+    
+    header.smaller a#logo {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+    header {
+        height: 70px;
+    }
+}
