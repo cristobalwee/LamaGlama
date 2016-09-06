@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    content: url(images/Fblogo.png) url(images/fbcolor.png) url(images/Linkedinlogo.png) url(images/linkedincolor.png) url(images/Githublogo.png) url(images/githubcolor.png) url(images/Behancelogo.png) url(images/Behancecolor.png);
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -416,10 +420,10 @@ input[type="submit"]:hover {
     font-family: "Roboto Slab", serif;
     font-size: 24px;
     margin: 0 auto;
-    width: 60vw;
-    right: -15vw;
+    width: 50vw;
+    right: -12vw;
     position: relative;
-    bottom: -20vh;
+    bottom: -25vh;
 }
 
 #whomadethis a {
