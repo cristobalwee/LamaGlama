@@ -4,8 +4,8 @@
         <meta name="description" content="Welcome to LamaGlama, the #1 purveyor of llamas in the Midwest.">
         <meta name="keywords" content="lamaglama,llama,sales,midwest">
         <meta name="author" content="Cristobal Grana">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>LamaGlama</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="indexstyles.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <script src="jquery-scrollto/vendor/jquery.js"></script>
@@ -16,12 +16,20 @@
         <![endif]-->
     </head>
     <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a onclick="$('#about').ScrollTo({duration: 1000, durationMode: 'all'}); closeNav();" class="navItem">ABOUT</a>
+            <a onclick="$('#facts').ScrollTo({duration: 1000, durationMode: 'all'}); closeNav();" class="navItem">FACTS</a>
+            <a onclick="$('#contact').ScrollTo({duration: 1000, durationMode: 'all'}); closeNav();" class="navItem">CONTACT</a>
+            <a onclick="$('#whomadethis').ScrollTo({duration: 1000, durationMode: 'all'}); closeNav();" class="navItem">WHO MADE THIS?</a>
+        </div>
         <header>
             <a id="logo" onclick="$('#launch').ScrollTo({duration: 500, durationMode: 'all'});">LamaGlama</a>
             <a onclick="$('#whomadethis').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem" id="itemRight">WHO MADE THIS?</a>
             <a onclick="$('#contact').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">CONTACT</a>
             <a onclick="$('#facts').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">FACTS</a>
             <a onclick="$('#about').ScrollTo({duration: 1000, durationMode: 'all'});" class="navItem">ABOUT</a>
+            <a onclick="openNav()" id="openIcon">☰</a>
         </header>
         <div id="launch">
             <p>Welcome to LamaGlama</p>
@@ -139,7 +147,7 @@
         </div>
         <div id="beforeyougo">
             <iframe src="//giphy.com/embed/26BRQkC06BuJAwiti" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p id="source"><a href="http://giphy.com/gifs/llama-pajamas-lazyanimal-26BRQkC06BuJAwiti">via GIPHY</a></p>
-            <h1>Before you go, check <a href="http://modernfarmer.com/2015/09/difference-between-llama-and-alpaca/" target="_blank">this</a> out</h1>
+            <h1>Before you go, check <a href="http://modernfarmer.com/2015/09/difference-between-llama-and-alpaca/">this</a> out</h1>
             <h2>(it’s an article outlining the differences between alpacas and llamas)
 Remember: Alpacas != Llamas</h2>
             <footer>
@@ -208,6 +216,16 @@ Remember: Alpacas != Llamas</h2>
             function close6() {
                 document.getElementById("modal6").style.opacity = "0";
                 document.getElementById("modal6").style.zIndex = "-1";
+            }
+            
+            function openNav() {
+                document.getElementById("mySidenav").style.display = "block";
+                document.getElementById("mySidenav").style.height = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.height = "0";
+                document.getElementById("mySidenav").style.display = "none";
             }
             
             function validateForm() {
