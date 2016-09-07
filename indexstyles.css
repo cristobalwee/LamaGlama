@@ -645,4 +645,8 @@ footer img:hover {
     .columns {
         float: none;
     }
+    
+    h2 {
+        display: none;
+    }
 }
