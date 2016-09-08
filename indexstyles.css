@@ -268,16 +268,19 @@ header.smaller a.navItem {
     opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
+    -ms-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
 }
 
 .modalDialog p {
     text-align: justify;
     color: white;
+    position: relative;
     font-family: "Roboto Slab", serif;
     font-size: 26px;
     width: 750px;
     margin: 0 auto;
+    left: -10px;
 }
 
 #modal6 p {
@@ -287,7 +290,6 @@ header.smaller a.navItem {
 .modalDialog img {
     height: 250px;
     margin-top: 15vh;
-    margin-right: -5vh;
     margin-bottom: 20px;
 }
 
@@ -301,6 +303,7 @@ header.smaller a.navItem {
 .close {
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 
 #contact {
@@ -352,6 +355,9 @@ input[type="text"], input[type="email"] {
     font-family: "Roboto Slab", serif;
     font-size: 12px;
     border-bottom: dashed 2px white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
     border-radius: 4px;
 }
 
@@ -371,6 +377,9 @@ input[type="submit"] {
     font-size: 20px;
     background-color: #ff6666;
     color: white;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
     border-radius: 8px;
 }
 
@@ -576,7 +585,10 @@ footer img:hover {
     overflow-x: hidden;
     padding-top: 60px;
     display: none;
-    transition: all 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .sidenav a {
@@ -584,7 +596,7 @@ footer img:hover {
     text-align: center;
     color: white;
     font-family: "Roboto Slab", serif;
-    font-size: 14px;
+    font-size: 24px;
     display: block;
     width: 100%;
     padding: 0;
@@ -598,6 +610,10 @@ footer img:hover {
     right: 20px;
     font-size: 36px !important;
     margin: 0;
+}
+
+#responsiveCarousel {
+    display: none;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 714px) {
@@ -623,6 +639,7 @@ footer img:hover {
     
     #logo {
         font-size: 24px;
+        margin-left: 20px;
     }
     
     header.smaller a#logo {
@@ -638,12 +655,12 @@ footer img:hover {
         font-size: 30px;
     }
     
-    .columnContainer {
-        width: 50%;
+    #about {
+        height: 260vh;
     }
     
-    .columns {
-        float: none;
+    .columnContainer {
+        display: none;
     }
     
     h2 {
@@ -652,5 +669,63 @@ footer img:hover {
     
     h1 {
         font-size: 28px;
+    }
+    
+    #responsiveCarousel {
+        display: block;
+    }
+    
+    #responsiveCarousel p {
+        text-align: justify;
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 20px;
+        width: 80vw;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #responsiveCarousel img {
+        height: 75px;
+        margin-bottom: 45px;
+    }
+    
+    #topEntry {
+        margin-top: 150px;
+    }
+    
+    #middleEntry, #bottomEntry {
+        margin-top: 100px;
+        height: 60vh;
+    }
+    
+    .modalDialog p {
+        text-align: justify;
+        color: white;
+        position: relative;
+        font-family: "Roboto Slab", serif;
+        font-size: 22px;
+        width: 75%;
+        margin: 0 auto;
+        left: -10px;
+    }
+
+    #modal6 p {
+        margin-top: 10vh;
+        font-size: 16px;
+        
+    }
+
+    .modalDialog img {
+        height: 150px;
+        margin-top: 20vh;
+        margin-bottom: 20px;
+    }
+
+    .modalDialog ol {
+        text-align: left;
+        width: 80vw;
+        margin: 30px auto;
+        font-size: 18px;
     }
 }
