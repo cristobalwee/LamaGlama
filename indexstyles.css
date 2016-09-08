@@ -692,6 +692,7 @@ footer img:hover {
     
     #topEntry {
         margin-top: 150px;
+        height: 60vh;
     }
     
     #middleEntry, #bottomEntry {
