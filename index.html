@@ -169,14 +169,14 @@
         </div>
         <div id="contact">
             <p class="topTitle">Let's Talk Llamas</p>
-            <form name="contactform" action="handler.php" method="post" onsubmit="return validateForm()">
+            <form name="contactform" method="post" onsubmit="return validateForm()">
                 <p class="formp">Name</p>
-                <input type="text" name="name">
+                <input id="name" type="text" name="name">
                 <br>
                 <p class="formp">Email Address</p>
-                <input type="email" name="email">
+                <input id="email" type="email" name="email">
                 <p class="formp">Message</p>
-                <input type="text" name="comments">
+                <input id="comments" type="text" name="comments">
                 <input type="submit" name="submit" value="Submit">
             </form>
             <a onclick="$('#whomadethis').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
@@ -283,6 +283,14 @@ Remember: Alpacas != Llamas</h2>
                     alert("Don't forget to fill in your email.");
                     return false;
                 }
+            }
+            
+            function submitForm() {
+                var from = document.getElementById("email");
+                var name = document.getElementById("name");
+                var comment = document.getElementById("comments");
+                window.open('mailto:cristobal.wee@gmail.com?subject=Form submission&body=Hello there, this is Cristobal Grana, thank you for your interest and for visiting LamaGlama.');
+                window.location.replace("thankyou.html");
             }
             
             function init() {
