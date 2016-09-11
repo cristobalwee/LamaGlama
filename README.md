@@ -2,7 +2,7 @@
 
 Site is hosted with GitHub Pages at http://cristobalwee.github.io/LamaGlama
 
-Hello there, this is a little page I made as a challenge for the Zappos frontend summer internship. The guidelines were simple: make a 1-5 page site about llamas, include a bit about yourself, make it look cool.  I mainly used HTML5/CSS3 with a dash of JS and jQuery to make this site since I haven't had much experience with JS libraries/frameworks (although I would've loved to have learned Angular and use it here; but hey, maybe for another time) I used this library (http://balupton.github.io/jquery-scrollto/) for smooth scrolling, and this one (http://callmenick.com/post/animated-resizing-header-on-scroll) for the resizing header. Sources for images and facts outlined below.
+Hello there, this is a little page I made as a challenge for the Zappos frontend summer internship. The guidelines were simple: make a 1-5 page site about llamas, include a bit about yourself, make it look cool.  I mainly used HTML5/CSS3 with a dash of JS and jQuery to make this site since I haven't had much experience with JS libraries/frameworks (although I would've loved to have learned Angular and use it here; but hey, maybe for another time). I also tried to handle form submission with a few lines of PHP, but unfortunately gh pages doesn't support it at this time, so the form submission is currently not working. I used this library (http://balupton.github.io/jquery-scrollto/) for smooth scrolling, and this one (http://callmenick.com/post/animated-resizing-header-on-scroll) for the resizing header. Sources for images and facts outlined below.
 
 Sources:
 
