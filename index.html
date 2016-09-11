@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="description" content="Welcome to LamaGlama, the #1 purveyor of llamas in the Midwest.">
+        <meta name="description" content="Welcome to LamaGlama, the #1 site for learning about the the coolest herd animal in the world: the Llama">
         <meta name="keywords" content="lamaglama,llama,sales,midwest">
         <meta name="author" content="Cristobal Grana">
         <title>LamaGlama</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="indexstyles.css">
+        <link rel="icon" type="image/png" href="images/icon.png">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-        <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-        <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-        <script src="owl-carousel/owl.carousel.js"></script>
         <script src="jquery-scrollto/vendor/jquery.js"></script>
         <script src="jquery-scrollto/lib/jquery-scrollto.js"></script>
         <script src="classie.js"></script>
@@ -72,6 +70,36 @@
         </div>
         <div id="facts">
             <p class="title">LLamas. Are. Awesome</p>
+            <div id="responsiveFacts">
+                <div id="topResponsive" class="responsiveContainer">
+                    <span class="containerItem" onclick="open1()">
+                        <img src="images/llamaspit.png" alt="Llama Spit">
+                        <p>Llama Spit</p>
+                    </span>
+                    <span class="containerItem" onclick="open2()">
+                        <img src="images/llamaguards.png" alt="Llama Guards">
+                        <p>Llama Guards</p>
+                    </span>
+                    <span class="containerItem" onclick="open3()">
+                        <img src="images/llamapoop.png" alt="Llama Poop">
+                        <p>Llama Poop</p>
+                    </span>
+                </div>
+                <div id="bottomResponsive" class="responsiveContainer">
+                    <span class="containerItem" onclick="open4()">
+                        <img src="images/llamatravel.png" alt="Llama Travel">
+                        <p>Llama Travel</p>
+                    </span>
+                    <span class="containerItem" onclick="open5()">
+                        <img src="images/llamafur.png" alt="Llama Fur">
+                        <p>Llama Fur</p>
+                    </span>
+                    <span class="containerItem" onclick="open6()">
+                        <img src="images/llamacool.png" alt="Llama Awesomeness">
+                        <p>Llama Awesomeness</p>
+                    </span>
+                </div>
+            </div>
             <div class="collectionContainer">
                 <span id="spit" class="containerItem" onclick="open1()">
                     <img src="images/llamaspit.png" alt="Llama Spit">
@@ -99,8 +127,8 @@
                     <img src="images/llamacool.png" alt="Llama Awesomeness">
                     <p>Llama Awesomeness</p>
                 </span>
-                
-                <!--Modal Popups-->
+            </div>
+            <!--Modal Popups-->
                 <div class="modalDialog" id="modal1">
                     <a class="close" href="javascript:void(0)" onclick="close1()">Close</a>
                     <img src="images/llamaspit.png" alt="Llama Spitting">
@@ -137,7 +165,6 @@
                         <li>Llamas are soft and furry, so you can always have something to pet.</li>
                     </ol>
                 </div>
-            </div>
             <a onclick="$('#contact').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
         </div>
         <div id="contact">
