@@ -1,0 +1,38 @@
+body {
+    background-color: #444;
+}
+
+h1 {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 32px;
+}
+
+a {
+    font-family: "Roboto Slab", serif;
+    color: #b2b2b2;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
