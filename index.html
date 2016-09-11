@@ -169,7 +169,7 @@
         </div>
         <div id="contact">
             <p class="topTitle">Let's Talk Llamas</p>
-            <form name="contactform" method="post" onsubmit="return validateForm()">
+            <form name="contactform" onsubmit="return validateForm()">
                 <p class="formp">Name</p>
                 <input id="name" type="text" name="name">
                 <br>
@@ -177,7 +177,7 @@
                 <input id="email" type="email" name="email">
                 <p class="formp">Message</p>
                 <input id="comments" type="text" name="comments">
-                <input type="submit" name="submit" value="Submit" onclick="submitForm()">
+                <input type="submit" name="submit" value="Submit" onclick="window.location.replace("thankyou.html");">
             </form>
             <a onclick="$('#whomadethis').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
         </div>
