@@ -177,7 +177,7 @@
                 <input id="email" type="email" name="email">
                 <p class="formp">Message</p>
                 <input id="comments" type="text" name="comments">
-                <input type="submit" name="submit" value="Submit" onclick="alert("Thank you for your interest in LamaGlama. Unfortunately, at this time, the site is being hosted by GitHub pages, which does not support PHP, essentially making form submission way harder than it should be - but feel free to contact me via the links at the bottom at the page.">
+                <input type="submit" name="submit" value="Submit">
             </form>
             <a onclick="$('#whomadethis').ScrollTo({duration: 1000, durationMode: 'all'});"><img src="images/downarrow.png"></a>
         </div>
@@ -283,6 +283,7 @@ Remember: Alpacas != Llamas</h2>
                     alert("Don't forget to fill in your email.");
                     return false;
                 }
+                alert("Thank you for your interest in LamaGlama. Unfortunately, at this time, the site is being hosted by GitHub pages, which does not support PHP, essentially making form submission way harder than it should be - but feel free to contact me via the links at the bottom at the page."
             }
             
             function submitForm() {
